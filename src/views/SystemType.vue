@@ -3,24 +3,25 @@
   <Header msg="System Type" />
 
   <h5>Is your organisation Education or Corporate</h5>
-
-  <div class="of-flex of-flex-center">
-    <ImgRadio
-      v-model="info.orgSize"
-      value="Single"
-      label="Single"
-      img="logo.png"
-      @click="updateOrgSize"
-    />
-    <ImgRadio
-      v-model="info.orgSize"
-      value="Multi"
-      label="Multi"
-      img="logo.png"
-      @click="updateOrgSize"
-    />
+  <PageButtons previousPage="Start" nextPage="Details" />
+  <div class="of-container">
+    <div class="of-grid-2-col">
+      <ImgRadio
+        v-model="orgSize"
+        value="Single"
+        label="Single"
+        img="Single-Organisation.png"
+        @click="updateOrgSize"
+      />
+      <ImgRadio
+        v-model="orgSize"
+        value="Multi"
+        label="Multi"
+        img="MAT.png"
+        @click="updateOrgSize"
+      />
+    </div>
   </div>
-  <PageButtons previousPage="Start" nextPage="Hardware" />
 </template>
 
 <script>
@@ -37,10 +38,13 @@ export default {
   },
   data() {
     return {
-      info: {
-        orgSize: "",
-      },
+      orgSize: "",
     };
+  },
+  mounted() {
+    if (this.$store.getters.orgSize) {
+      this.orgSize = this.$store.getters.orgSize;
+    }
   },
   methods: {
     updateOrgSize(e) {

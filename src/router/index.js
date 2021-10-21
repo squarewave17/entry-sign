@@ -8,6 +8,13 @@ import AccessDoorControl from "../views/AccessDoorControl.vue";
 import Software from "../views/Software.vue";
 import InfectionControlPackage from "../views/InfectionControlPackage.vue";
 import ProductAddons from "../views/ProductAddons.vue";
+import EntrysignAddons from "../views/sub/EntrysignAddons.vue";
+import FobsTokens from "../views/sub/FobsTokens.vue";
+import IdCards from "../views/sub/IdCards.vue";
+import LabelsCards from "../views/sub/LabelsCards.vue";
+import Lanyards from "../views/sub/Lanyards.vue";
+import Terminals from "../views/sub/Terminals.vue";
+import Details from "../views/Details.vue";
 import Summary from "../views/Summary.vue";
 
 const routes = [
@@ -55,6 +62,42 @@ const routes = [
     path: "/product-addons",
     name: "Product Addons",
     component: ProductAddons,
+  },
+  {
+    path: "/product-addons/entrysign-addons",
+    name: "Entrysign Add-ons",
+    component: EntrysignAddons,
+  },
+  {
+    path: "/product-addons/fobs-and-tokens",
+    name: "Fobs and Tokens",
+    component: FobsTokens,
+  },
+  {
+    path: "/product-addons/terminals",
+    name: "Terminals",
+    component: Terminals,
+  },
+  {
+    path: "/product-addons/labels-cards",
+    name: "Labels and Business Cards",
+    component: LabelsCards,
+  },
+  {
+    path: "/product-addons/id-cards",
+    name: "ID Cards and Holders",
+    component: IdCards,
+  },
+  {
+    path: "/product-addons/lanyards",
+    name: "Lanyards and YoYo Reels",
+    component: Lanyards,
+  },
+
+  {
+    path: "/details",
+    name: "Details",
+    component: Details,
   },
   {
     path: "/summary",

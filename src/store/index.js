@@ -15,14 +15,22 @@ export default createStore({
     buttonFill: "Outline",
     buttonShape: "Rectangle",
     themeColour: "#888888",
+    kioskColor: "",
     themeStyle: "Light",
     logoUpload:
       "https://www.dashmedia.co.uk/wp-content/uploads/2020/08/logo.png",
     additionalRFID: "",
     additionalDesk: "",
     additionalWall: "",
-    accessDoorControl: "",
+    accessDoorControl: null,
     misSystem: "",
+    ICP: [
+      "Touch Free Sign In",
+      "Smart Connected Sanitisation",
+      "Rapid Temperature Screening",
+    ],
+    testAddon: "",
+    QRCodeScanner: "",
   },
   mutations: {
     updateOrgType(state, orgType) {
@@ -64,6 +72,9 @@ export default createStore({
     updateThemeColour(state, themeColour) {
       state.themeColour = themeColour;
     },
+    updateKioskColor(state, kioskColor) {
+      state.kioskColor = kioskColor;
+    },
     updateThemeStyle(state, themeStyle) {
       state.themeStyle = themeStyle;
     },
@@ -85,6 +96,15 @@ export default createStore({
     updateMisSystem(state, misSystem) {
       state.misSystem = misSystem;
     },
+    updateIcp(state, ICP) {
+      state.ICP = ICP;
+    },
+    updateQRCodeScanner(state, QRCodeScanner) {
+      state.QRCodeScanner = QRCodeScanner;
+    },
+    updateTestAddon(state, testAddon) {
+      state.testAddon = testAddon;
+    },
   },
   actions: {},
   modules: {},
@@ -102,6 +122,7 @@ export default createStore({
     buttonFill: (state) => state.buttonFill,
     buttonShape: (state) => state.buttonShape,
     themeColour: (state) => state.themeColour,
+    kioskColor: (state) => state.kioskColor,
     themeStyle: (state) => state.themeStyle,
     logoUpload: (state) => state.logoUpload,
     additionalRFID: (state) => state.additionalRFID,
@@ -109,5 +130,8 @@ export default createStore({
     additionalWall: (state) => state.additionalWall,
     accessDoorControl: (state) => state.accessDoorControl,
     misSystem: (state) => state.misSystem,
+    ICP: (state) => state.ICP,
+    QRCodeScanner: (state) => state.QRCodeScanner,
+    testAddon: (state) => state.testAddon,
   },
 });

@@ -1,24 +1,26 @@
 <template>
-  <label v-if="label" class="of-form-label">{{ label }}</label>
-  <select
-    :value="modelValue"
-    class="of-select"
-    v-bind="{
-      ...$attrs,
-      onChange: ($event) => {
-        $emit('update:modelValue', $event.target.value)
-      },
-    }"
-  >
-    <option
-      v-for="option in options"
-      :value="option"
-      :key="option"
-      :selected="option === modelValue"
+  <div class="base-select">
+    <label v-if="label" class="of-form-label">{{ label }}</label>
+    <select
+      :value="modelValue"
+      class="of-select"
+      v-bind="{
+        ...$attrs,
+        onChange: ($event) => {
+          $emit('update:modelValue', $event.target.value);
+        },
+      }"
     >
-      {{ option }}
-    </option>
-  </select>
+      <option
+        v-for="option in options"
+        :value="option"
+        :key="option"
+        :selected="option === modelValue"
+      >
+        {{ option }}
+      </option>
+    </select>
+  </div>
 </template>
 
 <script>
@@ -26,16 +28,16 @@ export default {
   props: {
     label: {
       trype: String,
-      default: '',
+      default: "",
     },
     modelValue: {
       type: [String, Number],
-      default: '',
+      default: "",
     },
     options: {
       type: Array,
       required: true,
     },
   },
-}
+};
 </script>

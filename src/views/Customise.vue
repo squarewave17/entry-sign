@@ -1,12 +1,16 @@
 <template>
   <Header msg="Customiser" />
+  <h4 class="of-text-weight-bold">Customise your screen design</h4>
+
+  <h5>Choose a template to see how it looks</h5>
+  <PageButtons previousPage="Hardware" nextPage="Additional Entry Points" />
   <div class="of-container-xlarge customiser-page">
     <div class="of-form-container of-mx-5">
       <form class="of-grid-small" of-grid>
         <div class="of-width-1-1">
           <BaseSelect
             :options="layoutOptions"
-            v-model="info.layout"
+            v-model="layout"
             label="Layout Orientation"
             @input="updateLayout"
           />
@@ -14,7 +18,7 @@
         <div class="of-width-1-1">
           <BaseSelect
             :options="buttonFills"
-            v-model="info.buttonFill"
+            v-model="buttonFill"
             label="Button Fill"
             @input="updateButtonFill"
           />
@@ -22,7 +26,7 @@
         <div class="of-width-1-1">
           <BaseSelect
             :options="buttonShapes"
-            v-model="info.buttonShape"
+            v-model="buttonShape"
             label="Button Shape"
             @input="updateButtonShape"
           />
@@ -31,7 +35,7 @@
         <div class="of-width-1-1">
           <BaseSelect
             :options="themeStyles"
-            v-model="info.themeStyle"
+            v-model="themeStyle"
             label="Page Style"
             @input="updateThemeStyle"
           />
@@ -52,11 +56,21 @@
             @input="updateThemeColour"
           />
         </div>
+        <div
+          class="of-width-1-1"
+          v-if="this.$store.getters.hardwareType == 'Kiosk'"
+        >
+          <BaseSelect
+            :options="kioskColors"
+            v-model="kioskColor"
+            label="Kiosk Colour"
+            @input="updateKioskColor"
+          />
+        </div>
       </form>
     </div>
     <Customiser :textColor="textColor" />
   </div>
-  <PageButtons previousPage="Hardware" nextPage="Additional Entry Points" />
 </template>
 
 <script>
@@ -81,16 +95,43 @@ export default {
       buttonFills: ["Outline", "Solid"],
       buttonShapes: ["Rectangle", "Rounded", "Square", "Circle"],
       themeStyles: ["Filled", "Light"],
-      info: {
-        layout: "",
-        buttonFill: "",
-        buttonShape: "",
-        themeColour: "",
-        themeStyle: "",
-        logoUpload: "",
-      },
+      kioskColors: ["Black", "White"],
+
+      layout: "",
+      buttonFill: "",
+      buttonShape: "",
+      themeColour: "",
+      themeStyle: "",
+      logoUpload: "",
+      kioskColor: "",
       textColor: "",
     };
+  },
+  mounted() {
+    if (this.$store.getters.layout) {
+      this.layout = this.$store.getters.layout;
+    }
+    if (this.$store.getters.buttonFill) {
+      this.buttonFill = this.$store.getters.buttonFill;
+    }
+    if (this.$store.getters.buttonShape) {
+      this.buttonShape = this.$store.getters.buttonShape;
+    }
+    if (this.$store.getters.themeColour) {
+      this.themeColour = this.$store.getters.themeColour;
+    }
+    if (this.$store.getters.themeStyle) {
+      this.themeStyle = this.$store.getters.themeStyle;
+    }
+    if (this.$store.getters.logoUpload) {
+      this.logoUpload = this.$store.getters.logoUpload;
+    }
+    if (this.$store.getters.textColor) {
+      this.textColor = this.$store.getters.textColor;
+    }
+    if (this.$store.getters.kioskColor) {
+      this.kioskColor = this.$store.getters.kioskColor;
+    }
   },
   methods: {
     updateLayout(e) {
@@ -110,6 +151,10 @@ export default {
       } else {
         this.textColor = "#141414";
       }
+    },
+    updateKioskColor(e) {
+      this.$store.commit("updateKioskColor", e.target.value);
+      this.kioskColor = e.target.value;
     },
     updateThemeStyle(e) {
       this.$store.commit("updateThemeStyle", e.target.value);
@@ -131,5 +176,11 @@ export default {
 }
 .of-form-container {
   width: 30%;
+}
+
+.kiosk-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 </style>

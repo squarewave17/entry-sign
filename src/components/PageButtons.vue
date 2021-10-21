@@ -14,7 +14,7 @@
       class="of-button of-button-small of-button-default"
       rel="prev"
       v-if="nextPage"
-      >Next Page</router-link
+      >{{ nextText || "Next Page" }}</router-link
     >
   </div>
 </template>
@@ -24,6 +24,7 @@ export default {
   name: "PageButtons",
   props: {
     nextPage: String,
+    nextText: String,
     previousPage: String,
   },
 };

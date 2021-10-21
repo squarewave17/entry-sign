@@ -1,15 +1,15 @@
 <!-- SYSTEM CONFIGUTATOR -->
 <template>
-  <Header msg="Start" />
+  <Header msg="System Configurator" />
+  <h4 class="of-text-weight-bold">
+    So that we can build your system, we need some information to create your
+    solution.
+  </h4>
+
+  <h5>Is your organisation Education or Corporate?</h5>
+  <PageButtons nextPage="System Type" />
   <div class="of-container">
-    <h4 class="of-text-weight-bold">
-      So that we can build your system, we need some information to create your
-      solution.
-    </h4>
-
-    <h5>Is your organisation Education or Corporate</h5>
-
-    <div class="of-flex of-flex-center">
+    <div class="of-grid-2-col">
       <ImgRadio
         v-model="orgType"
         value="Education"
@@ -26,7 +26,6 @@
       />
     </div>
   </div>
-  <PageButtons nextPage="System Type" />
 </template>
 
 <script>
@@ -45,6 +44,11 @@ export default {
     return {
       orgType: "",
     };
+  },
+  mounted() {
+    if (this.$store.getters.orgType) {
+      this.orgType = this.$store.getters.orgType;
+    }
   },
   methods: {
     updateOrgType(e) {

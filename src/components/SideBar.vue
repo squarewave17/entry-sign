@@ -48,6 +48,8 @@
         <br />
         Theme Colour: {{ $store.getters.themeColour }}
         <br />
+        Kiosk Colour: {{ $store.getters.kioskColor }}
+        <br />
         <strong>Additional Entry Points</strong>
         <br />
         RFID: {{ $store.getters.additionalRFID }}
@@ -63,6 +65,8 @@
         <strong>Software</strong>
         <br />
         ADC: {{ $store.getters.misSystem }}
+        <br />
+        TFS: {{ $store.getters.ICP }}
       </div>
     </div>
   </div>
