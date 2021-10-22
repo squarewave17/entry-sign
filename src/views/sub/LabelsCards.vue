@@ -4,18 +4,18 @@
   <div class="of-container of-py-6 ac-nav-container">
     <Addon
       image="entrysign-brother-labels.png"
-      label="QR Code Scanner"
-      storeItem="updateQRCodeScanner"
+      label="Entrysign Brother Labels"
+      storeItem="EntrysignBrotherLabels"
     />
     <Addon
       image="entrysign-seiko-labels.png"
-      label="Fire Alarm Interface"
-      storeItem="updateTestAddon"
+      label="Entrysign Seiko Labels"
+      storeItem="EntrysignSeikoLabels"
     />
     <Addon
       image="seiko-business-cards.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Seiko Business Cards"
+      storeItem="SeikoBusinessCards"
     />
   </div>
 </template>

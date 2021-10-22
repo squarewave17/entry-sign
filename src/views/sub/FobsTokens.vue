@@ -4,38 +4,34 @@
   <div class="of-container of-py-6 ac-nav-container">
     <Addon
       image="mifare-coin-tag.png"
-      label="QR Code Scanner"
-      storeItem="updateQRCodeScanner"
+      label="Mifare Coin Tag"
+      storeItem="MifareCoinTag"
     />
-    <Addon
-      image="mifare-fob.png"
-      label="Fire Alarm Interface"
-      storeItem="updateTestAddon"
-    />
+    <Addon image="mifare-fob.png" label="Mifare Fob" storeItem="MifareFob" />
     <Addon
       image="mifare-sticker.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Mifare Sticker"
+      storeItem="MifareSticker"
     />
     <Addon
       image="paxton-10-fobs.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Paxton 10 Fobs"
+      storeItem="Paxton110Fobs"
     />
     <Addon
       image="mifare-wristband.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Mifare Wristband"
+      storeItem="MifareWristband"
     />
     <Addon
       image="mifare-wristband-blue.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Mifare Wristband Blue"
+      storeItem="MifareWristbandBlue"
     />
     <Addon
       image="mifare-wristband-yellow.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Mifare Wristband Yellow"
+      storeItem="MifareWristbandYellow"
     />
   </div>
 </template>

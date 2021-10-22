@@ -1,6 +1,6 @@
 <template>
   <Header msg="Summary" />
-  <PageButtons previousPage="Product Addons" />
+  <PageButtons previousPage="Contact Details" />
 </template>
 
 <script>

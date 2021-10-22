@@ -1,5 +1,12 @@
 <template>
   <Header msg="MIS" />
+  <h4>
+    Would you like EntrySign to integrate with your school management system?
+  </h4>
+  <h5>
+    Please select the MIS your organisation currently uses below. If you would
+    not like MIS integration, select “None”.
+  </h5>
   <PageButtons
     previousPage="Additional Entry Points"
     nextPage="Access Door Control"

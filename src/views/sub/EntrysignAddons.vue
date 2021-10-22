@@ -5,22 +5,22 @@
     <Addon
       image="QR-code-scanner.png"
       label="QR Code Scanner"
-      storeItem="updateQRCodeScanner"
+      storeItem="QRCodeScanner"
     />
     <Addon
       image="Fire-Alarm-Interface.png"
       label="Fire Alarm Interface"
-      storeItem="updateTestAddon"
+      storeItem="FireAlarmInterface"
     />
     <Addon
       image="evolis-ribbon.png"
       label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      storeItem="EvolisRibbon"
     />
     <Addon
       image="card-printer.png"
       label="Card Printer"
-      storeItem="updateTestAddon"
+      storeItem="CardPrinter"
     />
   </div>
 </template>

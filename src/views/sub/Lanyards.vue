@@ -4,68 +4,64 @@
   <div class="of-container of-py-6 ac-nav-container">
     <Addon
       image="lanyard-black.png"
-      label="QR Code Scanner"
-      storeItem="updateQRCodeScanner"
+      label="Lanyard Black"
+      storeItem="LanyardBlack"
     />
     <Addon
       image="lanyard-dark-green.png"
-      label="Fire Alarm Interface"
-      storeItem="updateTestAddon"
+      label="Lanyard Dark Green"
+      storeItem="LanyardDarkGreen"
     />
     <Addon
       image="lanyard-governor.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Lanyard Governor"
+      storeItem="LanyardGovernor"
     />
     <Addon
       image="lanyard-grey.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Lanyard Grey"
+      storeItem="LanyardGrey"
     />
     <Addon
       image="lanyard-navy.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Lanyard Navy"
+      storeItem="LanyardNavy"
     />
     <Addon
       image="lanyard-orange.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Lanyard Orange"
+      storeItem="LanyardOrange"
     />
-    <Addon
-      image="lanyard-red.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
-    />
+    <Addon image="lanyard-red.png" label="Lanyard Red" storeItem="LanyardRed" />
     <Addon
       image="lanyard-royal-blue.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Lanyard Royal Blue"
+      storeItem="LanyardRoyalBlue"
     />
     <Addon
-      image="lanyard-royal-blue.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      image="lanyard-staff.png"
+      label="Lanyard Staff"
+      storeItem="LanyardStaff"
     />
     <Addon
       image="lanyard-visitor.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Lanyard Visitor"
+      storeItem="LanyardVisitor"
     />
     <Addon
       image="lanyard-yellow.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Lanyard Yellow"
+      storeItem="LanyardYellow"
     />
     <Addon
       image="yo-yo-reel-oval.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Yo-Yo Reel Oval"
+      storeItem="YoYoReelOval"
     />
     <Addon
       image="yo-yo-reel-round.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Yo Yo Reel Round"
+      storeItem="YoYoReelRound"
     />
   </div>
 </template>
@@ -87,6 +83,6 @@ export default {
 <style scoped>
 .ac-nav-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 </style>

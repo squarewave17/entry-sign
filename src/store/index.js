@@ -31,6 +31,45 @@ export default createStore({
     ],
     testAddon: "",
     QRCodeScanner: "",
+    FireAlarmInterface: "",
+    EvolisRibbon: "",
+    CardPrinter: "",
+    MifareCoinTag: "",
+    MifareFob: "",
+    MifareSticker: "",
+    Paxton110Fobs: "",
+    MifareWristband: "",
+    MifareWristbandBlue: "",
+    MifareWristbandYellow: "",
+    A7PlasticWallet: "",
+    CardHolderCloseFace: "",
+    CardHolderOpenBlack: "",
+    CardHolderOpenClear: "",
+    CardHolderOpenNavy: "",
+    CardHolderOpenOrange: "",
+    CardHolderOpenPortrait: "",
+    CardHolderOpenRed: "",
+    CardHolderOpenRoyal: "",
+    EasyDoorCardHolder: "",
+    MifareCards: "",
+    PaxtonCards: "",
+    PVCISOCards: "",
+    LanyardBlack: "",
+    LanyardDarkGreen: "",
+    LanyardGovernor: "",
+    LanyardGrey: "",
+    LanyardNavy: "",
+    LanyardOrange: "",
+    LanyardRed: "",
+    LanyardRoyalBlue: "",
+    LanyardStaff: "",
+    LanyardVisitor: "",
+    LanyardYellow: "",
+    YoYoReelOval: "",
+    YoYoReelRound: "",
+    EntrysignBrotherLabels: "",
+    EntrysignSeikoLabels: "",
+    SeikoBusinessCards: "",
   },
   mutations: {
     updateOrgType(state, orgType) {
@@ -99,11 +138,125 @@ export default createStore({
     updateIcp(state, ICP) {
       state.ICP = ICP;
     },
-    updateQRCodeScanner(state, QRCodeScanner) {
+    QRCodeScanner(state, QRCodeScanner) {
       state.QRCodeScanner = QRCodeScanner;
     },
-    updateTestAddon(state, testAddon) {
-      state.testAddon = testAddon;
+    FireAlarmInterface(state, FireAlarmInterface) {
+      state.FireAlarmInterface = FireAlarmInterface;
+    },
+    EvolisRibbon(state, EvolisRibbon) {
+      state.EvolisRibbon = EvolisRibbon;
+    },
+    CardPrinter(state, CardPrinter) {
+      state.CardPrinter = CardPrinter;
+    },
+    MifareCoinTag(state, MifareCoinTag) {
+      state.MifareCoinTag = MifareCoinTag;
+    },
+    MifareFob(state, MifareFob) {
+      state.MifareFob = MifareFob;
+    },
+    MifareSticker(state, MifareSticker) {
+      state.MifareSticker = MifareSticker;
+    },
+    Paxton110Fobs(state, Paxton110Fobs) {
+      state.Paxton110Fobs = Paxton110Fobs;
+    },
+    MifareWristband(state, MifareWristband) {
+      state.MifareWristband = MifareWristband;
+    },
+    MifareWristbandBlue(state, MifareWristbandBlue) {
+      state.MifareWristbandBlue = MifareWristbandBlue;
+    },
+    MifareWristbandYellow(state, MifareWristbandYellow) {
+      state.MifareWristbandYellow = MifareWristbandYellow;
+    },
+    A7PlasticWallet(state, A7PlasticWallet) {
+      state.A7PlasticWallet = A7PlasticWallet;
+    },
+    CardHolderCloseFace(state, CardHolderCloseFace) {
+      state.CardHolderCloseFace = CardHolderCloseFace;
+    },
+    CardHolderOpenBlack(state, CardHolderOpenBlack) {
+      state.CardHolderOpenBlack = CardHolderOpenBlack;
+    },
+    CardHolderOpenClear(state, CardHolderOpenClear) {
+      state.CardHolderOpenClear = CardHolderOpenClear;
+    },
+    CardHolderOpenNavy(state, CardHolderOpenNavy) {
+      state.CardHolderOpenNavy = CardHolderOpenNavy;
+    },
+    CardHolderOpenOrange(state, CardHolderOpenOrange) {
+      state.CardHolderOpenOrange = CardHolderOpenOrange;
+    },
+    CardHolderOpenPortrait(state, CardHolderOpenPortrait) {
+      state.CardHolderOpenPortrait = CardHolderOpenPortrait;
+    },
+    CardHolderOpenRed(state, CardHolderOpenRed) {
+      state.CardHolderOpenRed = CardHolderOpenRed;
+    },
+    CardHolderOpenRoyal(state, CardHolderOpenRoyal) {
+      state.CardHolderOpenRoyal = CardHolderOpenRoyal;
+    },
+    EasyDoorCardHolder(state, EasyDoorCardHolder) {
+      state.EasyDoorCardHolder = EasyDoorCardHolder;
+    },
+    MifareCards(state, MifareCards) {
+      state.MifareCards = MifareCards;
+    },
+    PaxtonCards(state, PaxtonCards) {
+      state.PaxtonCards = PaxtonCards;
+    },
+    PVCISOCards(state, PVCISOCards) {
+      state.PVCISOCards = PVCISOCards;
+    },
+    LanyardBlack(state, LanyardBlack) {
+      state.LanyardBlack = LanyardBlack;
+    },
+    LanyardDarkGreen(state, LanyardDarkGreen) {
+      state.LanyardDarkGreen = LanyardDarkGreen;
+    },
+    LanyardGovernor(state, LanyardGovernor) {
+      state.LanyardGovernor = LanyardGovernor;
+    },
+    LanyardGrey(state, LanyardGrey) {
+      state.LanyardGrey = LanyardGrey;
+    },
+    LanyardNavy(state, LanyardNavy) {
+      state.LanyardNavy = LanyardNavy;
+    },
+    LanyardOrange(state, LanyardOrange) {
+      state.LanyardOrange = LanyardOrange;
+    },
+    LanyardRed(state, LanyardRed) {
+      state.LanyardRed = LanyardRed;
+    },
+    LanyardRoyalBlue(state, LanyardRoyalBlue) {
+      state.LanyardRoyalBlue = LanyardRoyalBlue;
+    },
+    LanyardStaff(state, LanyardStaff) {
+      state.LanyardStaff = LanyardStaff;
+    },
+    LanyardVisitor(state, LanyardVisitor) {
+      state.LanyardVisitor = LanyardVisitor;
+    },
+    LanyardYellow(state, LanyardYellow) {
+      state.LanyardYellow = LanyardYellow;
+    },
+    YoYoReelOval(state, YoYoReelOval) {
+      state.YoYoReelOval = YoYoReelOval;
+    },
+    YoYoReelRound(state, YoYoReelRound) {
+      state.YoYoReelRound = YoYoReelRound;
+    },
+    EntrysignBrotherLabels(state, EntrysignBrotherLabels) {
+      state.EntrysignBrotherLabels = EntrysignBrotherLabels;
+    },
+    EntrysignSeikoLabels(state, EntrysignSeikoLabels) {
+      state.EntrysignSeikoLabels = EntrysignSeikoLabels;
+    },
+    SeikoBusinessCards(state, SeikoBusinessCards) {
+      state.SeikoBusinessCards = SeikoBusinessCards;
     },
   },
   actions: {},
@@ -132,6 +285,43 @@ export default createStore({
     misSystem: (state) => state.misSystem,
     ICP: (state) => state.ICP,
     QRCodeScanner: (state) => state.QRCodeScanner,
-    testAddon: (state) => state.testAddon,
+    FireAlarmInterface: (state) => state.FireAlarmInterface,
+    EvolisRibbon: (state) => state.EvolisRibbon,
+    MifareCoinTag: (state) => state.MifareCoinTag,
+    MifareFob: (state) => state.MifareFob,
+    MifareSticker: (state) => state.MifareSticker,
+    Paxton110Fobs: (state) => state.Paxton110Fobs,
+    MifareWristband: (state) => state.MifareWristband,
+    MifareWristbandBlue: (state) => state.MifareWristbandBlue,
+    MifareWristbandYellow: (state) => state.MifareWristbandYellow,
+    A7PlasticWallet: (state) => state.A7PlasticWallet,
+    CardHolderCloseFace: (state) => state.CardHolderCloseFace,
+    CardHolderOpenBlack: (state) => state.CardHolderOpenBlack,
+    CardHolderOpenClear: (state) => state.CardHolderOpenClear,
+    CardHolderOpenNavy: (state) => state.CardHolderOpenNavy,
+    CardHolderOpenOrange: (state) => state.CardHolderOpenOrange,
+    CardHolderOpenPortrait: (state) => state.CardHolderOpenPortrait,
+    CardHolderOpenRed: (state) => state.CardHolderOpenRed,
+    CardHolderOpenRoyal: (state) => state.CardHolderOpenRoyal,
+    EasyDoorCardHolder: (state) => state.EasyDoorCardHolder,
+    MifareCards: (state) => state.MifareCards,
+    PaxtonCards: (state) => state.PaxtonCards,
+    PVCISOCards: (state) => state.PVCISOCards,
+    LanyardBlack: (state) => state.LanyardBlack,
+    LanyardDarkGreen: (state) => state.LanyardDarkGreen,
+    LanyardGovernor: (state) => state.LanyardGovernor,
+    LanyardGrey: (state) => state.LanyardGrey,
+    LanyardNavy: (state) => state.LanyardNavy,
+    LanyardOrange: (state) => state.LanyardOrange,
+    LanyardRed: (state) => state.LanyardRed,
+    LanyardRoyalBlue: (state) => state.LanyardRoyalBlue,
+    LanyardStaff: (state) => state.LanyardStaff,
+    LanyardVisitor: (state) => state.LanyardVisitor,
+    LanyardYellow: (state) => state.LanyardYellow,
+    YoYoReelOval: (state) => state.YoYoReelOval,
+    YoYoReelRound: (state) => state.YoYoReelRound,
+    EntrysignBrotherLabels: (state) => state.EntrysignBrotherLabels,
+    EntrysignSeikoLabels: (state) => state.EntrysignSeikoLabels,
+    SeikoBusinessCards: (state) => state.SeikoBusinessCards,
   },
 });

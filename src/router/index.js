@@ -15,6 +15,7 @@ import LabelsCards from "../views/sub/LabelsCards.vue";
 import Lanyards from "../views/sub/Lanyards.vue";
 import Terminals from "../views/sub/Terminals.vue";
 import Details from "../views/Details.vue";
+import ContactDetails from "../views/ContactDetails.vue";
 import Summary from "../views/Summary.vue";
 
 const routes = [
@@ -98,6 +99,11 @@ const routes = [
     path: "/details",
     name: "Details",
     component: Details,
+  },
+  {
+    path: "/contact-details",
+    name: "Contact Details",
+    component: ContactDetails,
   },
   {
     path: "/summary",

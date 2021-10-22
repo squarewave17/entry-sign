@@ -4,78 +4,68 @@
   <div class="of-container of-py-6 ac-nav-container">
     <Addon
       image="a7-plastic-wallet.png"
-      label="QR Code Scanner"
-      storeItem="updateQRCodeScanner"
+      label="A7 Plastic Wallet"
+      storeItem="A7PlasticWallet"
     />
     <Addon
       image="card-holder-close-face.png"
-      label="Fire Alarm Interface"
-      storeItem="updateTestAddon"
+      label="Card Holder Close Face"
+      storeItem="CardHolderCloseFace"
     />
     <Addon
       image="card-holder-open-black.png"
-      label="Evolis Ribbon"
-      storeItem="updateTestAddon"
+      label="Card Holder Open Black"
+      storeItem="CardHolderOpenBlack"
     />
     <Addon
       image="card-holder-open-clear.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Card Holder Open Clear"
+      storeItem="CardHolderOpenClear"
     />
     <Addon
       image="card-holder-open-navy.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Card Holder Open Navy"
+      storeItem="CardHolderOpenNavy"
     />
     <Addon
       image="card-holder-open-orange.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Card Holder Open Orange"
+      storeItem="CardHolderOpenOrange"
     />
     <Addon
       image="card-holder-open-portrait.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Card Holder Open Portrait"
+      storeItem="CardHolderOpenPortrait"
     />
     <Addon
       image="card-holder-open-red.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Card Holder Open Red"
+      storeItem="CardHolderOpenRed"
     />
     <Addon
       image="card-holder-open-royal.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
-    />
-    <Addon
-      image="card-printer.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Card Holder Open Royal"
+      storeItem="CardHolderOpenRoyal"
     />
     <Addon
       image="easy-door-card-holder.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
-    />
-    <Addon
-      image="evolis-ribbon.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Easy Door Card Holder"
+      storeItem="EasyDoorCardHolder"
     />
     <Addon
       image="mifare-cards.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Mifare Cards"
+      storeItem="MifareCards"
     />
     <Addon
       image="paxton-cards.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="Paxton Cards"
+      storeItem="PaxtonCards"
     />
     <Addon
       image="pvc-iso-card.png"
-      label="Card Printer"
-      storeItem="updateTestAddon"
+      label="PVC ISO Cards"
+      storeItem="PVCISOCards"
     />
   </div>
 </template>
@@ -97,6 +87,6 @@ export default {
 <style scoped>
 .ac-nav-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 </style>

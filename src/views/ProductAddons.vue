@@ -1,6 +1,9 @@
 <template>
   <Header msg="Product Addons" />
-  <PageButtons previousPage="Infection Control Packages" nextPage="Summary" />
+  <PageButtons
+    previousPage="Infection Control Packages"
+    nextPage="Contact Details"
+  />
   <div class="of-container of-py-6 ac-nav-container">
     <ImgLink
       label="Entrysign Add-ons"
