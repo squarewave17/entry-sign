@@ -287,6 +287,7 @@ export default createStore({
     QRCodeScanner: (state) => state.QRCodeScanner,
     FireAlarmInterface: (state) => state.FireAlarmInterface,
     EvolisRibbon: (state) => state.EvolisRibbon,
+    CardPrinter: (state) => state.CardPrinter,
     MifareCoinTag: (state) => state.MifareCoinTag,
     MifareFob: (state) => state.MifareFob,
     MifareSticker: (state) => state.MifareSticker,

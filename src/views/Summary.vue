@@ -48,63 +48,218 @@
       </div>
       <div>
         <div class="system-build">
-          <h4>Your System</h4>
-          Organisation Type: {{ $store.getters.orgType }}
-          <br />
-          Organisation Size: {{ $store.getters.orgSize }}
-          <br />
-          Your Name: {{ $store.getters.firstName }}
-          <br />
-          Your Last Name: {{ $store.getters.lastName }}
-          <br />
-          Organisation Name: {{ $store.getters.orgName }}
-          <br />
-          Postcode: {{ $store.getters.postcode }}
-          <br />
-          Email {{ $store.getters.contactEmail }}
-          <br />
-          Phone {{ $store.getters.contactNumber }}
-          <br />
-          Mount Type: {{ $store.getters.hardwareType }}
-          <br />
+          <h4 class="of-text-bold">Your System</h4>
+          <p>Organisation Type: {{ $store.getters.orgType }}</p>
+
+          <p>Organisation Size: {{ $store.getters.orgSize }}</p>
+
+          <p>Your Name: {{ $store.getters.firstName }}</p>
+
+          <p>Your Last Name: {{ $store.getters.lastName }}</p>
+
+          <p>Organisation Name: {{ $store.getters.orgName }}</p>
+
+          <p>Postcode: {{ $store.getters.postcode }}</p>
+
+          <p>Email: {{ $store.getters.contactEmail }}</p>
+
+          <p>Phone: {{ $store.getters.contactNumber }}</p>
+
+          <p>Mount Type: {{ $store.getters.hardwareType }}</p>
+
           <strong>Customisation</strong>
-          <br />
-          Layout: {{ $store.getters.layout }}
-          <br />
-          Button Style: {{ $store.getters.buttonFill }}
-          <br />
-          Border Radius: {{ $store.getters.buttonShape }}
-          <br />
-          Page Style: {{ $store.getters.themeStyle }}
-          <br />
-          Logo: {{ $store.getters.logoUpload }}
-          <br />
-          Theme Colour: {{ $store.getters.themeColour }}
-          <br />
-          Kiosk Colour: {{ $store.getters.kioskColor }}
-          <br />
+
+          <p>Layout: {{ $store.getters.layout }}</p>
+
+          <p>Button Style: {{ $store.getters.buttonFill }}</p>
+
+          <p>Border Radius: {{ $store.getters.buttonShape }}</p>
+
+          <p>Page Style: {{ $store.getters.themeStyle }}</p>
+
+          <p>Logo: {{ $store.getters.logoUpload }}</p>
+
+          <p>Theme Colour: {{ $store.getters.themeColour }}</p>
+
+          <p v-if="$store.getters.hardwareType == 'Kiosk'">
+            Kiosk Colour: {{ $store.getters.kioskColor }}
+          </p>
+
           <strong>Additional Entry Points</strong>
-          <br />
-          RFID: {{ $store.getters.additionalRFID }}
-          <br />
-          Desk: {{ $store.getters.additionalDesk }}
-          <br />
-          Wall: {{ $store.getters.additionalWall }}
-          <br />
+
+          <p>RFID: {{ $store.getters.additionalRFID }}</p>
+
+          <p>Desk: {{ $store.getters.additionalDesk }}</p>
+
+          <p>Wall: {{ $store.getters.additionalWall }}</p>
+
           <strong>Access Door Control</strong>
-          <br />
-          ADC: {{ $store.getters.accessDoorControl }}
-          <br />
+
+          <p>ADC: {{ $store.getters.accessDoorControl }}</p>
+
           <strong>Software</strong>
-          <br />
-          MIS: {{ $store.getters.misSystem }}
-          <br />
+
+          <p>MIS: {{ $store.getters.misSystem }}</p>
+
           <strong>Infection Control Packages</strong>
-          <br />
-          TFS: {{ $store.getters.ICP }}
-          <br />
+
+          <p>Packages: {{ $store.getters.ICP }}</p>
+
           <strong>EntrySign Addons</strong>
-          <br />
+          <p v-if="$store.getters.QRCodeScanner">
+            QR Code Scanner: {{ $store.getters.QRCodeScanner }}
+          </p>
+          <p v-if="$store.getters.FireAlarmInterface">
+            Fire Alarm Interface: {{ $store.getters.FireAlarmInterface }}
+          </p>
+          <p v-if="$store.getters.EvolisRibbon">
+            Evolis Ribbon: {{ $store.getters.EvolisRibbon }}
+          </p>
+          <p v-if="$store.getters.CardPrinter">
+            Card Printer: {{ $store.getters.CardPrinter }}
+          </p>
+          <!-- fobs and tokens -->
+          <p v-if="$store.getters.MifareCoinTag">
+            Mifare Coin Tag: {{ $store.getters.MifareCoinTag }}
+          </p>
+          <p v-if="$store.getters.MifareFob">
+            Mifare Fob: {{ $store.getters.MifareFob }}
+          </p>
+          <p v-if="$store.getters.MifareSticker">
+            Mifare Sticker: {{ $store.getters.MifareSticker }}
+          </p>
+          <p v-if="$store.getters.Paxton110Fobs">
+            Paxton 10 Fobs: {{ $store.getters.Paxton110Fobs }}
+          </p>
+          <p v-if="$store.getters.MifareWristband">
+            Mifare Wristband (black): {{ $store.getters.MifareWristbandr }}
+          </p>
+          <p v-if="$store.getters.MifareWristbandBlue">
+            Mifare Wristband (blue): {{ $store.getters.MifareWristbandBlue }}
+          </p>
+          <p v-if="$store.getters.MifareWristbandYellow">
+            Mifare Wristband (yellow):
+            {{ $store.getters.MifareWristbandYellow }}
+          </p>
+          <!-- Labels and business cards -->
+          <p v-if="$store.getters.EntrysignBrotherLabels">
+            Entrysign Brother Labels:
+            {{ $store.getters.EntrysignBrotherLabels }}
+          </p>
+          <p v-if="$store.getters.EntrysignSeikoLabels">
+            Entrysign Seiko Labels:
+            {{ $store.getters.EntrysignSeikoLabels }}
+          </p>
+          <p v-if="$store.getters.SeikoBusinessCards">
+            Seiko Business Cards:
+            {{ $store.getters.SeikoBusinessCards }}
+          </p>
+          <!-- ID Cards and Holders -->
+          <p v-if="$store.getters.A7PlasticWallet">
+            A7 Plastic Wallet:
+            {{ $store.getters.A7PlasticWallet }}
+          </p>
+          <p v-if="$store.getters.CardHolderCloseFace">
+            Card Holder Close Face:
+            {{ $store.getters.CardHolderCloseFace }}
+          </p>
+          <p v-if="$store.getters.CardHolderOpenBlack">
+            Card Holder Open Black:
+            {{ $store.getters.CardHolderOpenBlack }}
+          </p>
+          <p v-if="$store.getters.CardHolderOpenClear">
+            Card Holder Open Clear:
+            {{ $store.getters.CardHolderOpenClear }}
+          </p>
+          <p v-if="$store.getters.CardHolderOpenNavy">
+            Card Holder Open Navy:
+            {{ $store.getters.CardHolderOpenNavy }}
+          </p>
+          <p v-if="$store.getters.CardHolderOpenOrange">
+            Card Holder Open Orange:
+            {{ $store.getters.CardHolderOpenOrange }}
+          </p>
+          <p v-if="$store.getters.CardHolderOpenPortrait">
+            Card Holder Open Portrait:
+            {{ $store.getters.CardHolderOpenPortrait }}
+          </p>
+          <p v-if="$store.getters.CardHolderOpenRed">
+            Card Holder Open Red:
+            {{ $store.getters.CardHolderOpenRed }}
+          </p>
+          <p v-if="$store.getters.CardHolderOpenRoyal">
+            Card Holder Open Royal:
+            {{ $store.getters.CardHolderOpenRoyal }}
+          </p>
+          <p v-if="$store.getters.EasyDoorCardHolder">
+            Easy Door Card Holder:
+            {{ $store.getters.EasyDoorCardHolder }}
+          </p>
+          <p v-if="$store.getters.MifareCards">
+            Mifare Cards:
+            {{ $store.getters.SMifareCards }}
+          </p>
+          <p v-if="$store.getters.PaxtonCards">
+            Paxton Cards:
+            {{ $store.getters.PaxtonCards }}
+          </p>
+          <p v-if="$store.getters.PVCISOCards">
+            PVC ISO Cards:
+            {{ $store.getters.PVCISOCards }}
+          </p>
+          <!-- Lannyards and yoyoys -->
+          <p v-if="$store.getters.LanyardBlack">
+            Lanyard Black:
+            {{ $store.getters.LanyardBlack }}
+          </p>
+          <p v-if="$store.getters.LanyardDarkGreen">
+            Lanyard Dark Green:
+            {{ $store.getters.LanyardDarkGreen }}
+          </p>
+          <p v-if="$store.getters.LanyardGovernor">
+            Lanyard Governor:
+            {{ $store.getters.LanyardGovernor }}
+          </p>
+          <p v-if="$store.getters.LanyardGrey">
+            Lanyard Grey:
+            {{ $store.getters.LanyardGrey }}
+          </p>
+          <p v-if="$store.getters.LanyardNavy">
+            Lanyard Navy:
+            {{ $store.getters.LanyardNavy }}
+          </p>
+          <p v-if="$store.getters.LanyardOrange">
+            Lanyard Orange:
+            {{ $store.getters.LanyardOrange }}
+          </p>
+          <p v-if="$store.getters.LanyardRed">
+            Lanyard Red:
+            {{ $store.getters.LanyardRed }}
+          </p>
+          <p v-if="$store.getters.LanyardRoyalBlue">
+            Lanyard Royal Blue:
+            {{ $store.getters.LanyardRoyalBlue }}
+          </p>
+          <p v-if="$store.getters.LanyardStaff">
+            Lanyard Staff:
+            {{ $store.getters.LanyardStaff }}
+          </p>
+          <p v-if="$store.getters.LanyardVisitor">
+            Lanyard Visitor:
+            {{ $store.getters.LanyardVisitor }}
+          </p>
+          <p v-if="$store.getters.LanyardYellow">
+            Lanyard Yellow:
+            {{ $store.getters.LanyardYellow }}
+          </p>
+          <p v-if="$store.getters.YoYoReelOval">
+            Yo-Yo Reel Oval:
+            {{ $store.getters.YoYoReelOval }}
+          </p>
+          <p v-if="$store.getters.YoYoReelRound">
+            Yo-Yo Reel Round:
+            {{ $store.getters.YoYoReelRound }}
+          </p>
         </div>
       </div>
     </div>
