@@ -1,18 +1,18 @@
 <template>
   <Header msg="Additional Entry Points" />
+  <div>
+    <h4 class="of-bolder">
+      Would you like to have the ability to sign people in or out at additional
+      entry and exit points in your organisation?
+    </h4>
+    <p>
+      This is usually a staff entrance from a car park or another reception
+      area. This could be another building or location provided they are on the
+      same site and network.
+    </p>
+  </div>
   <PageButtons previousPage="Customise" :nextPage="setButtonRoute" />
   <div class="of-container">
-    <div>
-      <h4 class="of-bolder">
-        Would you like to have the ability to sign people in or out at
-        additional entry and exit points in your organisation?
-      </h4>
-      <p>
-        This is usually a staff entrance from a car park or another reception
-        area. This could be another building or location provided they are on
-        the same site and network.
-      </p>
-    </div>
     <div of-grid class="of-child-width-expand@s of-text-center">
       <div class="of-flex of-flex-column of-flex-between">
         <img class="of-p-8" src="@/assets/RFID-Terminal.png" />

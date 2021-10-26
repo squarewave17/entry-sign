@@ -2,7 +2,7 @@
 <template>
   <Header msg="System Type" />
 
-  <h5>Is your organisation Education or Corporate</h5>
+  <h5>Is your organisation Single or Multi</h5>
   <PageButtons previousPage="Start" nextPage="Details" />
   <div class="of-container">
     <div class="of-grid-2-col">
